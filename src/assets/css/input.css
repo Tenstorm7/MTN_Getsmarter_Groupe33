@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary-yellow: #FFCB05;
+    --text-xs: 0.85rem;
+    --breakpoint-mdx: 55rem;
+    /* 880px */
+    --breakpoint-lgx: 68rem;
+    /* 1088px */
+    --inset-shadow-bottom: 1rem 5rem 0 -1rem rgba(0, 0, 0, 0.5);
+    --color-backgroundblue: #004F71;
+
+}
+
+@layer base {
+    h6 {
+        @apply text-center text-4xl md:text-6xl font-bold;
+    }
+}
+
+
+@layer components {
+    .card1 {
+        @apply w-[95%] mx-auto;
+    }
+
+    .card2 {
+        @apply w-[85%] mx-auto;
+    }
+
+    .card3 {
+        @apply w-[80%] mx-auto;
+    }
+
+    .transit {
+        @apply transition-all duration-300 delay-150 ease-in-out;
+    }
+
+    .icon {
+        @apply h-40 w-40 mx-auto flex flex-col items-center justify-center hover:no-underline hover:bg-amber-200 rounded-full underline;
+    }
+
+    .cliptop {
+        clip-path: inset(20px 0 0 0);
+        /* Masque uniquement le haut (20px) */
+    }
+}

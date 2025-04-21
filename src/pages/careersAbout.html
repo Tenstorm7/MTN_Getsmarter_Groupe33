@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="shortcut icon" href="./assets/images/Acceuil/mimilogo.png" type="image/x-icon">
+    <title>Careers-MTN Cameroun</title>
+</head>
+
+<body class="relative">
+
+    <!-- Image en arriere plan sur le body -->
+    <section
+        class="shadow-[inset_0px_-50px_40px_70px] shadow-black/60  -z-50 absolute top-0 h-[47rem] bg-[url('../images/CareerAbout/hero.jpg')] bg-center bg-cover w-full">
+
+    </section>
+
+    <!-- Element absolu sur la page***** -->
+    <div class="fixed bottom-0  z-50 flex justify-between w-full px-5">
+        <span class="relative mdx:pl-34 mdx:w-1/2 ">
+            <span
+                class="group  absolute bottom-0 text-white flex flex-col items-center  gap-2 bg-black px-8 pb-5 pt-3 rounded-t-xl">
+                <span class="hidden group-hover:flex transit  items-center gap-2">
+                    <img class="h-[0.8rem]" src="../assets/images/Acceuil/fr_FR.png" alt=""> EN
+                </span>
+                <span class="flex items-center gap-2">
+                    <img class="h-[0.8rem]" src="../assets/images/Acceuil/en_US.png" alt=""> EN
+                </span>
+            </span>
+        </span>
+        <span
+            class="relative shadow-2xl flex justify-center gap-4 bg-white text-xs font-medium rounded-4xl p-3 mb-2 mdx:mb-5 cursor-pointer items-center ">
+            <img class="h-[2.5rem] " src="../assets/images/Acceuil/chat.jpg" alt="">
+            <div class="flex flex-col ">
+                Y'ello there! <br> Need some help?
+                <span class="bg-primary-yellow px-4 py-2 rounded-xl ">Let's chat now</span>
+            </div>
+            <span class="relative flex flex-col">
+                <button><i class="fa-solid fa-xmark-large fa-2xs"></i>x</button>
+                <button class="absolute -bottom-11 -left-5   bg-primary-yellow h-12 w-12 rounded-full p-2">
+                    <img src="../assets/images/Acceuil/revisit.svg" alt="">
+                </button>
+            </span>
+        </span>
+    </div>
+
+    <header class="sticky top-0 lg:pb-10 z-30 bg-gradient-to-b from-black/90 to-black/0">
+        <!-- menu desktop ******* -->
+        <div class="relative h-full z-50 w-full">
+            <ul class="hidden card2 text-xs py-3 md:flex gap-5 text-white uppercase font-medium *:underline">
+                <li class="before:content-['.'] before:m-2 before:text-center"><a href="../index.html">personal</a></li>
+                <li><a href="">business</a></li>
+                <li><a href="./pages/momo.html">momo</a></li>
+                <li><a href="">play</a></li>
+                <li><a href="">foundation</a></li>
+            </ul>
+            <div class="absolute top-2 transit left-[2.5%] mdx:translate-y-10 card1 bg-primary-yellow rounded">
+                <div class="card2 flex items-center justify-between py-[0.8rem]">
+                    <div class="w-[35rem] lg:w-[45rem] flex items-center justify-between">
+                        <img class="h-[2rem]" src="../assets/images/Acceuil/mtn-logo primary.svg" alt="logo">
+                        <nav class="nav-menu hidden mdx:block transit">
+                            <ul class="flex flex-row gap-5 lg:gap-15 capitalize">
+                                <li><a href="">shop</a></li>
+                                <li><a href="">explore</a></li>
+                                <li><a href="">help</a></li>
+                                <li><a href="">careers</a></li>
+                                <li><a href="">coverage map</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <span class="flex gap-8 w-auto *:cursor-pointer">
+                        <button class="mdx:w-auto" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="block  mdx:hidden" id="menu-open-button"><i
+                                class="fa-solid fa-bars"></i></button>
+                        <button class="hidden" id="mobile-menu-close"><i class="fa fa-close"></i></button>
+                        <!-- <button class="block text-[68px] border">=</button>  -->
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu Mobile ******* -->
+        <section class="relative card1 mdx:hidden">
+            <div id="mobile-menu" class="-translate-y-[57rem] transit bg-white absolute top-5 w-full left-0 flex flex-col gap-10 pt-2 px-10 ">
+                <hr class="border">
+                <span class="flex flex-col gap-6 capitalize *:cursor-pointer">
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                        href="../index.html">home
+                        <img src="../assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">shop
+                        <img src="../assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">explore
+                        <img src="../assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">explore
+                        <img src="../assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">careers
+                        <img src="../assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">coverage
+                        map
+                        <img src="../assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </section>
+
+        <!-- search bar ***** -->
+        <div class="relative flex w-[80%]">
+            <div class="scale-0 absolute flex top-7 close transit mdx:top-16  mx-[10%] w-full bg-white py-1 px-4 mdx:p-4 rounded shadow-2xl"
+                id="search">
+                <input class="w-[85%] h-8  mdx:h-10" type="text" name="" id="">
+                <span class=" w-[15%] flex items-center justify-between">
+                    <button class="mdx:w-auto "><i class="fa-solid fa-magnifying-glass"></i> </button>
+                    <a class="underline  hover:no-underline transit" href="">Close</a>
+                    <button class="" id="close-search"><i class="fa fa-close"></i></button>
+                </span>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section>
+        <div class="h-[40rem] mb-5 flex flex-col">
+            <div class="card2 h-full text-white text-2xl font-semibold  flex">
+                <span class="mt-auto mb-10  space-y-10 font-sans">
+                    <h2 class="text-6xl mdx:text-8xl">Careers</h2>
+                    We're always looking for talented individuals to <br>
+                    join our y'elle Family. Explore more below
+                </span>
+            </div>
+            <div
+                class="card1 scale-101  bg-[#585553]/80 backdrop-blur py-5 font-medium rounded-xl flex justify-center items-center">
+                <a class="px-5 py-2 uppercase border-2 text-white rounded-full hover:bg-primary-yellow hover:text-black hover:border-black hover:border-none transit"
+                    href="">VIEW VACANCIES</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="bg-white z-10 pt-15 rounded-t-4xl">
+        <!-- awaits you ***? -->
+        <section>
+            <div class="px-5 mdx:w-[56rem] mx-auto space-y-10">
+                <h5 class="font-bold text-4xl text-center">An inspired life awaits you</h5>
+                <span class="space-y-5">
+                    <p class="text-[1.2rem]">
+                        Our promise is to create an inspired life for every MTNer, through the power of choice. <br> Our
+                        commitment comes in
+                        the form of our Employee Value Proposition, Live inspired.
+                    </p>
+                    <p>
+                        We're passionate about creating a positive and safe environment where all our MTNers feel free
+                        to be themselves and
+                        to live <br>
+                        their most authentic life.
+                    </p>
+                    <p>
+                        Being an MTNer means that you get to impact the lives of millions, doing work you truly love.
+                        It’s all about having,
+                        trusting <br>
+                        and real connections with people who thrive and grow together. Most of all, when you’re an
+                        MTNer you join a family. A family <br> enriched with different backgrounds, nationalities and
+                        genders. A family
+                        where you belong.
+                    </p>
+                </span>
+            </div>
+        </section>
+
+        <!-- OUR VALUES    **** -->
+        <section>
+            <div class="my-20">
+                <h6>Our Values</h6ss=>
+                    <div
+                        class="flex flex-row flex-wrap font-semibold text-2xl *:mt-20  lg:*:mt-30 *:flex *:flex-col *:mx-auto *:text-center lg:*:min-w-[30%] sm:*:min-w-[45%] *:min-w-[100%]">
+                        <div>
+                            <img class="h-[5rem]" src="../assets/images/Acceuil/subscribers.svg" alt="">
+                            Leadership
+                        </div>
+                        <div>
+                            <img class="h-[5rem]" src="../assets/images/CareerAbout/brain-svgrepo-com.svg" alt="">
+                            Innovation
+                        </div>
+                        <div>
+                            <img class="h-[5rem]" src="../assets/images/CareerAbout/handshake-svgrepo-com.svg" alt="">
+                            Relationship
+                        </div>
+                        <div>
+                            <img class="h-[5rem]"
+                                src="../assets/images/CareerAbout/protection-safe-secure-svgrepo-com.svg" alt="">
+                            Integrity
+                        </div>
+                        <div>
+                            <img class="h-[5rem]" src="../assets/images/CareerAbout/glove-svgrepo-com.svg" alt="">
+                            Can do
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- ***** vide0 de MTN (****) -->
+        <section>
+            <div class="card1 rounded-xl overflow-hidden">
+                <video controls loop class="w-full aspect-video"
+                    src="../assets/video/Careers – MTN Cameroon.mp4"></video>
+            </div>
+        </section>
+
+        <!-- Connect and slider **** -->
+        <section>
+            <div class="card1 my-10 flex flex-col gap-10">
+                <!-- Slider -->
+                <div class="overflow-hidden">
+                    <div class="w-[400%] md:w-[200%] lg:w-[100%]">
+                        <div class="grid transit grid-rows-1 grid-cols-4 lg:grid-cols-3 transition-transform duration-500 ease-in-out"
+                            id="carousel-items">
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="../assets/images/CareerAbout/Thrive.svg" alt="">
+                                <h5 class="font-bold text-xl">Thrive in positivity</h5>
+                                <p class=" w-[60%]">
+                                    We want you to thrive in a enviroment that belongs to you! An enviroment powered by
+                                    genuine inclusion
+                                    , respect for diversity, fair rewards, unbound recognition and personal flexibility.
+                                    Inspired to thrive!
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="../assets/images/CareerAbout/Connect.svg" alt="">
+                                <h5 class="font-bold text-xl">connect to develop</h5>
+                                <p class=" w-[60%]">
+                                    Meaningful connections help us grow, develop and advance through a common purpose
+                                    and invested relationships.
+                                    inspired to connect!
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="../assets/images/CareerAbout/Work.svg" alt="">
+                                <h5 class="font-bold text-xl">Work with meaning</h5>
+                                <p class=" w-[60%]">
+                                    We want you to live your passion every day and that means you get to do work that
+                                    empowers you, sparks your
+                                    creativity and inspires you to make an impact. inspired to work
+                                </p>
+                            </div>
+                            <div class="lg:hidden flex items-center justify-center flex-col text-center gap-5">
+                                <img src="../assets/images/CareerAbout/Thrive.svg" alt="">
+                                <h5 class="font-bold text-xl">Thrive in positivity</h5>
+                                <p class=" w-[60%]">
+                                    We want you to thrive in a enviroment that belongs to you! An enviroment powered by
+                                    genuine inclusion
+                                    , respect for diversity, fair rewards, unbound recognition and personal flexibility.
+                                    Inspired to thrive!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Indicators -->
+                <div class="lg:hidden flex justify-center mt-4 space-x-2">
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="0"></button>
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="1"></button>
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employer benefits ****** -->
+        <section class="hidden lg:flex">
+            <div
+                class="shadow-[inset_-1px_-60px_40px_45px] shadow-black/70 card1 text-white flex flex-col p-4 text-center h-[48rem] my-5  bg-top bg-cover  rounded-xl bg-[url('../images/CareerAbout/last.png')]">
+                <div class="h-[45%]"></div>
+                <div class="lgx:w-[69rem] mx-auto h-[65%] flex flex-col gap-10 mdx:space-y-0 text-xl">
+                    <h5 class="text-6xl font-bold">Employer Benefits</h5>
+                    <div class="grid grid-rows-1 grid-cols-3 gap-5">
+                        <div
+                            class="flex  bg-transparent backdrop-blur-[80px]  rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                            <h5 class="font-bold text-2xl m-auto">Life cover 3x your salary </h5>
+                        </div>
+                        <div class="flex  bg-transparent backdrop-blur-[80px] rounded-2xl px-10  py-25">
+                            <h5 class="font-bold text-2xl m-auto">Medical aid, no waiting period</h5>
+                        </div>
+                        <div
+                            class="flex  bg-transparent backdrop-blur-[80px] rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                            <h5 class="font-bold text-2xl m-auto">Unlimited annual live</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:hidden">
+            <div
+                class="shadow-[inset_-1px_-60px_40px_45px] shadow-black/70 card1 text-white flex flex-col p-4  text-center h-[48rem] my-5  bg-top bg-cover  rounded-xl bg-[url('../images/CareerAbout/last.png')]">
+                <div class="h-[40%] mdx:h-[55%]"></div>
+                <div class="mdx:card2 h-[55%] max-h-[70%] flex flex-col  mdx:gap-10 mdx:space-y-0 text-xl">
+                    <!-- Slider -->
+                    <div class="relative flex flex-col overflow-hidden  gap-10 mdx:space-y-0 text-xl">
+                        <h5 class="text-4xl mdx:text-6xl font-bold">Employer Benefits</h5>
+                        <div class=" w-[320%]">
+                            <div class="grid grid-rows-1 grid-cols-3 md:grid-cols-6 *:mr-3 transition-transform duration-500 ease-in-out"
+                                id="carousel-auto">
+                                <div
+                                    class="flex  bg-transparent backdrop-blur-[80px]  rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                                    <h5 class="font-bold text-2xl m-auto">Life cover 3x your salary </h5>
+                                </div>
+                                <div class="flex  bg-transparent backdrop-blur-[80px] rounded-2xl px-10  py-25">
+                                    <h5 class="font-bold text-2xl m-auto">Medical aid, no waiting period</h5>
+                                </div>
+                                <div
+                                    class="flex  bg-transparent backdrop-blur-[80px] rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                                    <h5 class="font-bold text-2xl m-auto">Unlimited annual live</h5>
+                                </div>
+                                <div
+                                    class="flex  bg-transparent backdrop-blur-[80px]  rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                                    <h5 class="font-bold text-2xl m-auto">Life cover 3x your salary </h5>
+                                </div>
+                                <div
+                                    class="flex  bg-transparent backdrop-blur-[80px] rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                                    <h5 class="font-bold text-2xl m-auto">Unlimited annual live</h5>
+                                </div>
+                                <div
+                                    class="flex  bg-transparent backdrop-blur-[80px]  rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                                    <h5 class="font-bold text-2xl m-auto">Life cover 3x your salary </h5>
+                                </div>
+                            </div>
+                            <!-- Navigation Buttons -->
+                            <button id="prevs"
+                                class="hidden md:block lg:hidden absolute top-3/5 left-2  transform -translate-y-1/2 bg-primary-yellow text-black h-10 w-10 rounded-full">
+                                &#10094;
+                            </button>
+                            <button id="nexts"
+                                class="hidden md:block lg:hidden absolute top-3/5 right-4 transform -translate-y-1/2 bg-primary-yellow text-black h-10 w-10 rounded-full">
+                                &#10095;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Indicators -->
+            <div class="lg:hidden flex justify-center mt-4 space-x-2">
+                <button class="w-3 h-3 bg-gray-800 rounded-full" data-slides="0"></button>
+                <button class="w-3 h-3 bg-gray-800 rounded-full" data-slides="1"></button>
+                <button class="md:hidden w-3 h-3 bg-gray-800 rounded-full" data-slides="2"></button>
+            </div>
+        </section>
+
+        <!-- latest article*** -->
+        <section>
+            <div class="card1 mdx:w-[70%] text-center flex flex-col justify-center items-center gap-10 my-10 ">
+                <h6>Latest News</h6>
+                <button class="px-8 py-4 bg-primary-yellow rounded-xl">All</button>
+                <p class="font-bold text-xl">No News articles available...</p>
+                <a class="font-medium text-white bg-black py-3 px-10 hover:bg-primary-yellow hover:text-black hover:shadow-[0px_11px_20px_-10px_#000000] transit  rounded-full "
+                    href=""> VIEW ALL NEWS</a>
+                <span class="flex flex-col gap-2 text-justify">
+                    <p class="text-xl">
+                        Our promise is to create an inspired life for every MTNer, through the power of choice. Our
+                        commitment comes in the form
+                        of our Employee Value Proposition, Live inspired.
+                    </p>
+                    <p>
+                        We’re passionate about creating a positive and safe environment where all our MTNers feel free
+                        to be themselves and to
+                        live their most authentic life.
+                    </p>
+                    <p>
+                        Being an MTNer means that you get to impact the lives of millions, doing work you truly love.
+                        It’s all about having,
+                        trusting and real connections with people who thrive and grow together. Most of all, when you’re
+                        an MTNer you join a
+                        family. A family enriched with different backgrounds, nationalities and genders. A family where
+                        you belong.
+                    </p>
+                </span>
+            </div>
+        </section>
+
+        <!-- Encore un caroussel***** -->
+        <section>
+            <div class="space-y-20 py-10">
+                <!-- Slider -->
+                <div class="overflow-hidden text-xl">
+                    <div class="w-[500%] mdx:w-[300%]">
+                        <div class="grid grid-rows-1 grid-cols-10 mdx:grid-cols-9 font-bold text-2xl transition-transform duration-500 ease-in-out"
+                            id="carousel-autol">
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]" src="../assets/images/CareerAbout/glove-svgrepo-com.svg" alt="">
+                                Can do
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]" src="../assets/images/Acceuil/subscribers.svg" alt=""> Leadership
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]" src="../assets/images/CareerAbout/brain-svgrepo-com.svg" alt="">
+                                Innovation
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]" src="../assets/images/CareerAbout/handshake-svgrepo-com.svg"
+                                    alt="">
+                                Relationship
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]"
+                                    src="../assets/images/CareerAbout/protection-safe-secure-svgrepo-com.svg" alt="">
+                                Integrity
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]" src="../assets/images/CareerAbout/glove-svgrepo-com.svg" alt="">
+                                Can do
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]" src="../assets/images/Acceuil/subscribers.svg" alt=""> Leadership
+                            </div>
+                            <div class="flex flex-col items-center gap-6">
+                                <img class="h-[5rem]"
+                                    src="../assets/images/CareerAbout/protection-safe-secure-svgrepo-com.svg" alt="">
+                                Integrity
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicators -->
+                <div class="flex justify-center mt-4 space-x-4">
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-slidesl="0"></button>
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-slidesl="1"></button>
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-slidesl="2"></button>
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-slidesl="3"></button>
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-slidesl="4"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4VITAL BEHAVIOURS -->
+        <SECTion>
+            <div class="card1 flex flex-col gap-5">
+                <div class="flex flex-col gap-5 bg-yellow-300 rounded-2xl pt-20 md:pb-30 md:mt-20 text-center">
+                    <h6> 4 Vital Behaviours</h6>
+                    <p>inform our actions</p>
+                    <!-- Slider -->
+                    <div class="overflow-hidden">
+                        <div class="w-[200%] lg:w-[100%]">
+                            <div class="grid grid-rows-1 grid-cols-4 md:grid-cols-6 lg:grid-cols-4  font-bold text-2xl *:justify-center *:p-4  transition-transform duration-500 ease-in-out"
+                                id="carousel-vital">
+                                <div class="flex flex-col items-center gap-6">
+                                    <img class="h-[5rem]" src="../assets/images/CareerAbout/done.svg" alt="">
+                                    Get it done
+                                </div>
+                                <div class="flex flex-col items-center gap-6">
+                                    <img class="h-[5rem]" src="../assets/images/CareerAbout/teamwork-svgrepo-com.svg"
+                                        alt="">
+                                    Active <br> Collaboration
+                                </div>
+                                <div class="flex flex-col items-center gap-6">
+                                    <img class="h-[5rem]" src="../assets/images/CareerAbout/donate-svgrepo-com.svg"
+                                        alt="">
+                                    Complete Candor <p class="text-xl font-normal text-justify break-all">Sed ut
+                                        perspicistis unde ommisiste natus error sit voluptaten</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-6">
+                                    <img class="h-[5rem]" src="../assets/images/CareerAbout/report-svgrepo-com.svg"
+                                        alt="">
+                                    Complete <br> Accountibility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicators -->
+                <div class="lg:hidden flex justify-center mt-4 space-x-4">
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-vital="0"></button>
+                    <button class="cursor-pointer w-3 h-3 bg-gray-200 rounded-full" data-vital="1"></button>
+                </div>
+            </div>
+        </SECTion>
+        <!-- MTN Chance********** -->
+        <section>
+            <div
+                class="card1 h-[25rem] flex flex-col rounded-2xl text-white my-10 p-5 bg-gradient-to-r  from-black to-black/5">
+                <div class="card2">
+                    <div class="h-[35%]"> </div>
+                    <div class="w-full flex flex-col gap-5 text-xl">
+                        <h6 class="text-justify">MTN Chance</h6>
+                        Enjoy the vip treatment from only 100frs
+                        <a class="border-2 text-xs font-bold w-fit px-15 py-3 rounded-full hover:bg-primary-yellow hover:border-none hover:text-black transit"
+                            href=""> HOME</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- working whth MTN ******** -->
+        <section class="my-20 card1">
+            <div class="w-[80%] lgx:w-[65%]  flex flex-col gap-20 mdx:gap-0 mdx:items-center  mdx:flex-row mx-auto">
+                <div class="space-y-5 px-5 mdx:min-w-1/2">
+                    <h4 class="text-2xl font-bold m-4">Working with MTN </h4>
+                    <ul class="flex flex-col  *:flex *:gap-2 *:hover:bg-gray-200 *:hover:rounded-xl *:px-4 *:pt-4">
+                        <li>
+                            <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                                href="#">Help
+                                <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                                href="#">Become an MTNer
+                                <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                                href="#">Coverage Map
+                                <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                            </a>
+                        </li>
+                        </select>
+                    </ul>
+                </div>
+                <div class="flex text-xl  pl-10 pr-20  py-15 text-white font-bold rounded-xl bg-gradient-to-t from-black to-black/60">
+                    <div class="flex flex-col mb-5 gap-5 w-full">
+                        <h5 class="text-[0.75rem] font-medium ">LOOKING FOR SOMETHING ELSE?</h5>
+                        <!-- slider ***? -->
+                        <div class="overflow-hidden">
+                            <div class="w-[300%] grid grid-cols-3 transition-transform duration-500 ease-in-out"
+                                id="carousel">
+                                <div class="flex flex-col gap-10 ">
+                                    <span class="flex flex-col gap-5 text-[1rem]  font-medium ">
+                                        <h class="text-3xl ">Latest News</h>
+                                        Newsroon
+                                    </span>
+                                    <hr class="text-gray-50/10 ">
+                                    <a class="text-[1.1rem]  font-bold flex items-center gap-2" href="">READ MORE
+                                        <span class=""><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col gap-10 ">
+                                    <span class="flex flex-col gap-5 text-[1rem]  font-medium ">
+                                        <h4 class="text-3xl ">Contacts Us</h4>
+                                        Just say y'ello, get in touch here
+                                    </span>
+                                    <hr class="text-gray-50/10 ">
+                                    <a class="text-[1.1rem] font-bold flex items-center gap-2" href="">READ MORE
+                                        <span class=""><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col gap-10 ">
+                                    <span class="flex flex-col gap-5 text-[1rem]  font-medium ">
+                                        <h4 class="text-3xl ">Promotions</h4>
+                                        See our products on promotion
+                                    </span>
+                                    <hr class="text-gray-50/10 ">
+                                    <a class="text-[1.1rem] font-bold flex items-center gap-2" href="">READ MORE
+                                        <span class=""><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indicators -->
+                        <div class="flex space-x-3">
+                            <button class="w-3 h-3  cursor-pointer rounded-full" data-all="0"></button>
+                            <button class="w-3 h-3  cursor-pointer rounded-full" data-all="1"></button>
+                            <button class="w-3 h-3  cursor-pointer rounded-full" data-all="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bg-black mt-22 rounded-t-2xl">
+            <div
+                class="px-5 pb-25 mdx:pb-10  mdx:pt-20 mdx:w-[95%] mx-auto flex flex-col gap-10  text-white  text-[12px]">
+                <span
+                    class="flex flex-col mdx:flex-row gap-5 font-bold justify-between border-b border-gray-200/30 py-3 *:flex *:flex-col mdx:*:flex-row *:gap-5">
+                    <ul class="py-5 *:cursor-pointer *:flex *:items-center *:gap-3">
+                        <li class="border-b border-gray-200/30 py-5 mdx:py-0 mdx:border-none">
+                            <img src="./assets/images/Acceuil/speech.svg" alt="">
+                            Contact Us
+                            <i class="fa-solid fa-chevron-down fa-sm"></i>
+                        </li>
+                        <li class="border-b border-gray-200/30 py-5 mdx:py-0 mdx:border-none">
+                            <img src="./assets/images/Acceuil/sidebar.svg" alt="">
+                            More sites
+                            <i class="fa-solid fa-chevron-down fa-sm"></i>
+                        </li>
+                    </ul>
+                    <ul
+                        class="pb-10  text-primary-yellow font-bold *:hover:text-white *:w-fit *:transition-colors *:duration-700  *:ease-in-out">
+                        <li>
+                            <a class="relative group py-2" href="">TWITTER
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">YOUTUBE
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">FACEBOOK
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">INSTAGRAM
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">LINKDIN
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+                <span>
+                    <ul class="flex gap-4  mdx:gap-10 *:hover:text-primary-yellow">
+                        <li>
+                            <a class="relative group py-2" href="">Privacy Policy
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px]  bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">Subscribers Termrs & Conditions
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">My Contract
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">Network Coverage Map
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+                <p>
+                    © 2025 MTN CAMEROON, ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="../assets/js/careersAbout.js"></script>
+<script src="https://kit.fontawesome.com/2a1b2a6388.js" crossorigin="anonymous"></script>
+
+</html>

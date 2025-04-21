@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="shortcut icon" href="./assets/images/Acceuil/mimilogo.png" type="image/x-icon">
+    <title>MTN Cameroun</title>
+</head>
+
+<body class="relative bg-black/70">
+
+    <!-- Image en arriere plan sur le body -->
+    <section
+        class="shadow-[inset_0px_-50px_40px_70px] shadow-black/60  -z-50 absolute top-0 h-[47rem] bg-[url('../images/Acceuil/hero.png')] bg-center bg-cover w-full">
+
+    </section>
+
+    <!-- Element absolu sur la page***** -->
+    <div class="fixed bottom-0 z-50 flex justify-between w-full px-5">
+        <span class="relative mdx:pl-12  mdx:w-1/2 ">
+            <span
+                class="group  absolute bottom-0 text-white flex flex-col items-center  gap-2 bg-black px-8 pb-5 pt-3 rounded-t-xl">
+                <span class="hidden group-hover:flex transit  items-center gap-2">
+                    <img class="h-[0.8rem]" src="./assets/images/Acceuil/fr_FR.png" alt=""> EN
+                </span>
+                <span class="flex items-center gap-2">
+                    <img class="h-[0.8rem]" src="./assets/images/Acceuil/en_US.png" alt=""> EN
+                </span>
+            </span>
+        </span>
+        <span
+            class="relative shadow-2xl flex justify-center gap-4 bg-white text-xs font-medium rounded-4xl p-3 mb-2 mdx:mb-5 cursor-pointer items-center ">
+            <img class="h-[2.5rem] " src="./assets/images/Acceuil/chat.jpg" alt="">
+            <div class="flex flex-col ">
+                Y'ello there! <br> Need some help?
+                <span class="bg-primary-yellow px-4 py-2 rounded-xl ">Let's chat now</span>
+            </div>
+            <span class="relative flex flex-col">
+                <button><i class="fa-solid fa-xmark-large fa-2xs"></i>x</button>
+                <button class="absolute -bottom-11 -left-5   bg-primary-yellow h-12 w-12 rounded-full p-2">
+                    <img src="./assets/images/Acceuil/revisit.svg" alt="">
+                </button>
+            </span>
+        </span>
+    </div>
+
+    <header class="sticky top-0 lg:pb-10 z-30 bg-gradient-to-b from-black/90 to-black/0 ">
+        <!-- menu desktop ******* -->
+        <div class="relative h-full z-50 w-full">
+            <ul class="hidden card2 text-xs py-3 md:flex gap-5 text-white uppercase font-medium *:underline">
+                <li class="before:content-['.'] before:m-2 before:text-center"><a href="">personal</a></li>
+                <li><a href="">business</a></li>
+                <li><a href="./pages/momo.html">momo</a></li>
+                <li><a href="">play</a></li>
+                <li><a href="">foundation</a></li>
+            </ul>
+            <div class="absolute top-2 transit left-[2.5%] mdx:translate-y-10 card1 bg-primary-yellow rounded">
+                <div class="card2 flex items-center justify-between py-[0.8rem]">
+                    <div class="w-[35rem] lg:w-[45rem] flex items-center justify-between">
+                        <img class="h-[2rem]" src="./assets/images/Acceuil/mtn-logo primary.svg" alt="logo">
+                        <nav class="nav-menu hidden mdx:block transit">
+                            <ul class="flex flex-row gap-5 lg:gap-15 capitalize">
+                                <li><a href="">shop</a></li>
+                                <li><a href="">explore</a></li>
+                                <li><a href="">help</a></li>
+                                <li><a href="./pages/careersAbout.html">careers</a></li>
+                                <li><a href="">coverage map</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <span class="flex gap-8 w-auto *:cursor-pointer">
+                        <button class="mdx:w-auto" id="open-search"> <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="block  mdx:hidden" id="menu-open-button"><i
+                                class="fa-solid fa-bars"></i></button>
+                        <button class="hidden" id="mobile-menu-close"><i class="fa fa-close"></i></button>
+                        <!-- <button class="block text-[68px] border">=</button>  -->
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- search bar ***** -->
+        <div class="relative flex w-[80%]">
+            <div class="group scale-0 absolute flex top-7 close transit mdx:top-16  mx-[10%] w-full bg-white py-1 px-4 mdx:p-4 rounded shadow-2xl"
+                id="search">
+                <input class="w-[85%] h-8  mdx:h-10" type="text" name="" id="">
+                <span class=" w-[15%] flex items-center justify-between">
+                    <button class="mdx:w-auto "><i class="fa-solid fa-magnifying-glass"></i> </button>
+                    <a class="underline  hover:no-underline transit" href="">Close</a>
+                    <button class="" id="close-search"><i class="fa fa-close"></i></button>
+                </span>
+            </div>
+        </div>
+
+        <!-- menu Mobile ******* -->
+        <section class="relative card1 mdx:hidden">
+            <div id="mobile-menu"
+                class="h-screen -translate-y-[47rem] transit bg-white absolute  w-full left-0 flex flex-col gap-10 pt-2 px-10 ">
+                <hr class="border">
+                <span class="flex flex-col gap-6 capitalize *:cursor-pointer">
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                        href="./index.html">home
+                        <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">shop
+                        <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">explore
+                        <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">explore
+                        <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">careers
+                        <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                    <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full" href="#">coverage
+                        map
+                        <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <div class="h-[44rem] flex items-end">
+            <div
+                class="card1 scale-101  bg-[#585553]/80 backdrop-blur py-5 font-medium mb-5 rounded-xl flex justify-center items-center">
+                <a class="px-5 py-2 uppercase border-2 text-white rounded-full hover:bg-primary-yellow hover:text-black hover:border-black hover:border-none transit"
+                    href="">more about campaign</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="bg-white z-10 rounded-t-4xl">
+        <!-- white section  -->
+        <section class="rounded-xl py-20 flex flex-col gap-20">
+            <!-- lien des applications de MTN  -->
+            <div class="w-full justify-around sm:w-[30rem] mb-20 mx-auto text-center flex sm:justify-around">
+                <a href="#" class="hover:bg-primary-yellow icon transit">
+                    <img class="h-14" src="./assets/images/Acceuil/myMTN.png" alt="">
+                    myMTN <br> cameroun
+                </a>
+                <a href="#" class="icon transit">
+                    <img class="h-14" src="./assets/images/Acceuil/ayoba.png" alt="">
+                    Ayoba
+                </a>
+                <a href="#" class="icon transit">
+                    <img class="h-14" src="./assets/images/Acceuil/momo.png" alt="">
+                    MoMo App
+                </a>
+            </div>
+            <!-- Promotions chez MTN  -->
+            <div class="card1 sm:mx-auto max-w-[68rem] lgx:w-[68rem] flex flex-col gap-14">
+                <h2 class="text-4xl sm:text-5xl font-bold mdx:m-auto">Promotions</h2>
+                <div class="grid transit grid-rows-3 gap-5 mdx:h-[30rem] mdx:grid-cols-2 mdx:grid-rows-2 *:rounded-xl *:mdx:h-auto *:h-[23rem]">
+                    <a href="#"
+                        class="flex group items-end  mdx:row-span-2 bg-center bg-cover hover:shadow-2xl hover:shadow-gray-400 hover:*:opacity-100 transit"
+                        style="background-image: url('./assets/images/Acceuil/banniere-3.jpg');">
+                        <img class="mx-14 my-10  h-14 w-20 group-hover:translate-x-3 mdx:opacity-0 transit"
+                            src="./assets/images/Acceuil/right-md-svgrepo-com.svg" alt="">
+                    </a>
+                    <div class="flex  items-end bg-center bg-cover hover:shadow-2xl hover:shadow-gray-400 hover:*:opacity-100 transit"
+                        style="background-image: url('./assets/images/Acceuil/banniere2.jpeg');">
+                    </div>
+                    <a href="#"
+                        class="group flex items-end bg-center bg-cover hover:shadow-2xl hover:shadow-gray-400 hover:*:scale-100 transit"
+                        style="background-image: url('./assets/images/Acceuil/banniere1\ \(2\).jpeg');">
+                        <div class="pb-7 pl-10  flex flex-col justify-between h-[90%]  text-white font-bold">
+                            <div class="space-y-2">
+                                <h2>MODEM</h2>
+                                <h2 class="text-3xl">MTN Mifi ZTE</h2>
+                            </div>
+                            <h2 class="text-4xl">19,900 XAF</h2>
+                        </div>
+                        <img class="my-6 h-10 w-20 group-hover:translate-x-3 transit mdx:scale-0 transit"
+                            src="./assets/images/Acceuil/right-md-svgrepo-com.svg" alt="">
+                    </a>
+                </div>
+                <a class="w-full text-center mdx:hidden mdx:mx-auto border-2 text-black mdx:w-fit transit px-10 py-3 rounded-full hover:bg-black hover:text-white hover:border-none"
+                    href=""> View More</a>
+            </div>
+            <hr class="text-gray-300">
+            <!-- Defferent offer   -->
+            <div class="flex justify-between items-center flex-wrap w-[95%] mx-auto">
+                <a href="" class="icon transit">
+                    <img class="mx-auto" src="./assets/images/Acceuil/ic_DEVICES.svg" alt="">
+                    Phone Offers
+                </a>
+                <a href="" class="icon transit">
+                    <img class="mx-auto" src="./assets/images/Acceuil/ic_INTERNET.svg" alt="">
+                    Phone Offers
+                </a>
+                <a href="" class="icon transit">
+                    <img class="mx-auto" src="./assets/images/Acceuil/Prepaid-Deals.svg" alt="">
+                    Home Offers
+                </a>
+                <a href="" class="icon transit">
+                    <img class="mx-auto" src="./assets/images/Acceuil/about-1.svg" alt="">
+                    Contract
+                </a>
+                <a href="" class="icon transit">
+                    <img class="mx-auto" src="./assets/images/Acceuil/news-1.svg" alt="">
+                    News
+                </a>
+                <a href="" class="icon transit">
+                    <img class="mx-auto" src="./assets/images/Acceuil/working-with-1.svg" alt="">
+                    Careers
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <!-- 25 ans de connexions ..... -->
+        <section class="">
+            <div class="shadow-[inset_0px_-50px_40px_70px]  shadow-black/80  card1 flex items-end rounded-2xl h-[50vh] sm:h-[85vh] bg-cover bg-center"
+                style="background-image: url('./assets/images/Acceuil/hero.png');">
+                <div class="w-full bg-black/10 ">
+                    <div
+                        class="text-white card2 mdx:w-[30rem] mdx:ml-20 flex mb-12 flex-col gap-2 rounded-2xl bg-transparent/95 backdrop-blur-2xl p-15 ">
+                        <h2 class="text-3xl font-bold">237 Vehicles to win</h2>
+                        <p>224 tricycles, 12 Pick-Up 4x4 Double Cab and 1 Tipper <br> Truck.</p>
+                        <a class="border-2 w-20 px-10 py-3 rounded-full hover:bg-white " href=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- slider section ***** -->
+        <section>
+            <div class="card2 my-20 flex flex-col gap-10">
+                <!-- Slider -->
+                <div class="overflow-hidden">
+                    <div class="w-[600%] mdx:w-[300%] lgx:w-[200%]">
+                        <div class="grid grid-rows-1 grid-cols-6 transition-transform duration-500 ease-in-out"
+                            id="carousel-items">
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="./assets/images/Acceuil/revenue.svg" alt="">
+                                <h5 class="font-bold text-xl">Why use Cash? Just <br> MoMo it</h5>
+                                Get the best MoMo rates as an <br> MTN subscriber
+                            </div>
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="./assets/images/Acceuil/ic_INTERNET.svg" alt="">
+                                <h5 class="font-bold text-xl">GSMA Mobile Money <br> Certification</h5>
+                                MTN MoMO leader in the security <br> of your transactions
+                            </div>
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="./assets/images/Acceuil/subscribers.svg" alt="">
+                                <h5 class="font-bold text-xl">2 Million Subscribers</h5>
+                                on Ayoba across Cameroon
+                            </div>
+                            <div class="flex items-center justify-center flex-col text-center gap-5">
+                                <img src="./assets/images/Acceuil/operation.svg" alt="">
+                                <h5 class="font-bold text-xl">Africa's most Valuable<br>brand</h5>
+                                With operations in all 10 regions
+                            </div>
+                            <div class="hidden sm:flex items-center justify-center flex-col text-center gap-5">
+                                <img src="./assets/images/Acceuil/revenue.svg" alt="">
+                                <h5 class="font-bold text-xl">Why use Cash? Just <br> MoMo it</h5>
+                                Get the best MoMo rates as an <br> MTN subscriber
+                            </div>
+                            <div class="hidden sm:flex items-center justify-center flex-col text-center gap-5">
+                                <img src="./assets/images/Acceuil/ic_INTERNET.svg" alt="">
+                                <h5 class="font-bold text-xl">GSMA Mobile Money <br> Certification</h5>
+                                MTN MoMO leader in the security <br> of your transactions
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Indicators -->
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="0"></button>
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="1"></button>
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="2"></button>
+                    <button class="w-3 h-3 cursor-pointer bg-gray-400 rounded-full" data-slide="3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expand Your World ****** -->
+        <section>
+            <div
+                class="shadow-[inset_-1px_-60px_40px_70px] shadow-black/70 card1 text-white flex items-end justify-center text-center h-[35rem] my-5  bg-top bg-cover  rounded-xl bg-[url('../images/Acceuil/last.jpg')]">
+                <div class="m-auto lg:h-[60%] w-full flex flex-col space-y-[5%] mdx:space-y-0">
+                    <h5 class="text-5xl font-bold">Expand your world</h5>
+                    <div
+                        class="card3 text-xl md:w-fit lg:m-auto flex flex-col gap-5 bg-transparent backdrop-blur-2xl rounded-2xl px-10  py-15 md:px-25 md:py-20 ">
+                        <h5 class="font-bold text-3xl">MTN App</h5>
+                        Manage your account, new SIM cards, <br> earn rewards and recharge.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- working whth MTN ******** -->
+        <section class="py-20">
+            <div class="card1  max-w-[40rem]   flex flex-col gap-20 mdx:gap-0 mdx:items-center  mdx:flex-row mx-auto">
+                <div class="space-y-5 px-5 mdx:min-w-1/2">
+                    <h4 class="text-xl font-bold m-4">Working with MTN </h4>
+                    <ul class="flex flex-col  *:flex *:gap-2 *:hover:bg-gray-200 *:hover:rounded-xl *:px-4 *:pt-4">
+                        <li>
+                            <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                                href="#">Help
+                                <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                                href="#">Become an MTNer
+                                <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="border-b border-gray-200 flex items-center justify-between pb-4 w-full"
+                                href="#">Coverage Map
+                                <img src="./assets/images/Acceuil/chevron-right (1).svg" alt="">
+                            </a>
+                        </li>
+                        </select>
+                    </ul>
+                </div>
+                <div class="flex px-10 py-15 text-white font-bold rounded-xl bg-gradient-to-t from-black to-black/60">
+                    <div class="flex flex-col mb-5 gap-5 w-full">
+                        <h5 class="text-[0.75rem] font-medium ">LOOKING FOR SOMETHING ELSE?</h5>
+                        <!-- slider ***? -->
+                        <div class="overflow-hidden">
+                            <div class="w-[300%] grid grid-cols-3 transition-transform duration-500 ease-in-out"
+                                id="carousel">
+                                <div class="flex flex-col gap-5 ">
+                                    <span class="flex flex-col gap-5 text-[1rem]  font-medium ">
+                                        <h4 class="text-2xl ">Latest News</h4>
+                                        Newsroon
+                                    </span>
+                                    <hr class="text-gray-50/10 ">
+                                    <a class="text-[0.75rem] font-bold flex items-center gap-2" href="">READ MORE
+                                        <span class=""><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col gap-5 ">
+                                    <span class="flex flex-col gap-5 text-[1rem]  font-medium ">
+                                        <h4 class="text-2xl ">Contacts Us</h4>
+                                        Just say y'ello, get in touch here
+                                    </span>
+                                    <hr class="text-gray-50/10 ">
+                                    <a class="text-[0.75rem] font-bold flex items-center gap-2" href="">READ MORE
+                                        <span class=""><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col gap-5 ">
+                                    <span class="flex flex-col gap-5 text-[1rem]  font-medium ">
+                                        <h4 class="text-2xl ">Promotions</h4>
+                                        See our products on promotion
+                                    </span>
+                                    <hr class="text-gray-50/10 ">
+                                    <a class="text-[0.75rem] font-bold flex items-center gap-2" href="">READ MORE
+                                        <span class=""><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indicators -->
+                        <div class="flex space-x-3">
+                            <button class="w-2 h-2 cursor-pointer bg-gray-400 rounded-full" data-all="0"></button>
+                            <button class="w-2 h-2 cursor-pointer bg-gray-400 rounded-full" data-all="1"></button>
+                            <button class="w-2 h-2 cursor-pointer bg-gray-400 rounded-full" data-all="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bg-black mt-22 rounded-t-2xl">
+            <div
+                class="px-5 pb-25 mdx:pb-10  mdx:pt-20 mdx:w-[95%] mx-auto flex flex-col gap-10  text-white  text-[12px]">
+                <span
+                    class="flex flex-col mdx:flex-row gap-5 font-bold justify-between border-b border-gray-200/30 py-3 *:flex *:flex-col mdx:*:flex-row *:gap-5">
+                    <ul class="py-5 *:cursor-pointer *:flex *:items-center *:gap-3">
+                        <li class="border-b border-gray-200/30 py-5 mdx:py-0 mdx:border-none">
+                            <img src="./assets/images/Acceuil/speech.svg" alt="">
+                            Contact Us
+                            <i class="fa-solid fa-chevron-down fa-sm" ></i>
+                        </li>
+                        <li class="border-b border-gray-200/30 py-5 mdx:py-0 mdx:border-none">
+                            <img src="./assets/images/Acceuil/sidebar.svg" alt="">
+                            More sites
+                            <i class="fa-solid fa-chevron-down fa-sm"></i>
+                        </li>
+                    </ul>
+                    <ul
+                        class="pb-10  text-primary-yellow font-bold *:hover:text-white *:w-fit *:transition-colors *:duration-700  *:ease-in-out">
+                        <li>
+                            <a class="relative group py-2" href="">TWITTER
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">YOUTUBE
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">FACEBOOK
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">INSTAGRAM
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">LINKDIN
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+                <span>
+                    <ul class="flex gap-4  mdx:gap-10 *:hover:text-primary-yellow">
+                        <li>
+                            <a class="relative group py-2" href="">Privacy Policy
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px]  bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">Subscribers Termrs & Conditions
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">My Contract
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="relative group py-2" href="">Network Coverage Map
+                                <span
+                                    class="absolute  bottom-0 left-0 w-0 h-[1px] bg-yellow-500 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </span>
+                <p>
+                    © 2025 MTN CAMEROON, ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="./assets/js/index.js"></script>
+<script src="https://kit.fontawesome.com/2a1b2a6388.js" crossorigin="anonymous"></script>
+
+</html>
